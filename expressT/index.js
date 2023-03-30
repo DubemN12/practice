@@ -11,6 +11,7 @@ app.listen(3000,() =>{
 // This is also how routing works
 app.get('/',(req, res) =>{
     res.json({name: 'Dubem Nwachukwu'})
+    res.sendFile(__dirname + '/index.html')
 })
 
 app.get('/about', (req,res) =>{
